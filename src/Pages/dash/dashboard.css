@@ -1,0 +1,265 @@
+/*Body*/
+* {}
+
+/*Contenedor principal e hijos*/
+.container-grid {
+    display: grid;
+    grid-template-areas:
+        "menu envios envios derecha"
+        "menu mensajes mensajes derecha";
+    gap: 10px;
+    grid-template-columns: minmax(130px, 230px) 1fr 1fr;
+    
+    margin: 5px;   
+}
+
+.conteo,
+.exportar,
+.datos,
+.envios,
+.mensajes {
+    border: var(--border-color) solid 1px;
+    border-radius: 10px;
+    box-shadow: 0 10px 40px -12px rgba(16, 24, 40, .1);
+    transition: border-color 0.5s;
+}
+
+.conteo:hover,
+.exportar:hover,
+.datos:hover,
+.envios:hover,
+.mensajes:hover {
+    border: var(--targetas) 1px solid;
+}
+
+.menu {
+    grid-area: menu;
+}
+
+.derecha{
+    grid-area: derecha;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 250px;
+}
+
+.mensajes {
+    grid-area: mensajes;
+    height: fit-content;
+}
+
+.envios {
+    grid-area: envios;
+    height: 100%;
+}
+
+/*Menu*/
+.nav-menu {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.nav-menu>ul>li {
+    display: grid;
+    grid-auto-rows: 50px;
+    list-style: none;
+    font-size: .8rem;
+    font-family: serif;
+
+
+}
+
+.nav-menu>ul>li>a {
+    text-decoration: none;
+    color: var(--color);
+    height: 100%;
+    align-content: center;
+    padding: 0 0 0 1.9rem;
+
+}
+
+.nav-menu>ul>li>a:hover {
+    background-color: var(--hover-color);
+    border-left: 5px solid;
+}
+
+/*Icono de usuario*/
+img {
+    width: 40px;
+    height: 40px;
+    border-radius: 9999px;
+}
+
+.img-name {
+    display: flex;
+    gap: 7px;
+    align-items: center;
+    height: fit-content;
+    padding: 10px;
+    width: 95%;
+    margin: 5px;
+    border-radius: 10px;
+    font-family: sans-serif;
+
+}
+
+.img-name>div {
+    display: flex;
+    flex-direction: column;
+    gap: .3rem;
+}
+
+.img-name>div>h2 {
+    font-size: .7rem;
+    color: #575757;
+}
+
+.img-name>div>span {
+    font-size: .8rem;
+    color: rgb(43, 43, 43);
+    font-weight: 400;
+}
+
+/* seccion conteo*/
+.conteo-card {
+    color: var(--color);
+    font-weight: 400;
+    font-size: 1.2rem;
+    width: 100%;
+    text-align: left;
+    padding-left: 10px;
+    padding-top: 5px;
+}
+
+.counter {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 10px;
+    align-items: center;
+}
+
+.counter-card {
+    display: grid;
+    grid-template-areas:
+        "barra texto reload"
+        "barra span reload";
+    column-gap: 20px;
+    background-color: var(--targetas);
+    border-radius: 10px;
+    height: 60px;
+    width: 90%;
+    color: var(--color);
+    font-size: .9rem;
+}
+
+.counter-card>p {
+    grid-area: texto;
+    
+    width: 180px;
+    margin-top: 9px;
+    color: var(--color);
+    font-weight: 500;
+
+}
+
+.counter-card>span {
+    grid-area: span;
+    width: 180px;
+    margin-bottom: 10px;
+    font-size: .8rem;
+}
+
+.barra {
+    grid-area: barra;
+    background-color: #575757;
+    height: 60px;
+    width: .5rem;
+    border-radius: 35px 0 0 35px;
+}
+
+.reload {
+    grid-area: reload;
+}
+
+/*Seccion de exportar*/
+.exports {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    
+    justify-self: center;
+    align-items: center;
+    padding: 10px;
+  }
+  .exports > button{
+    background-color: #664cff;
+    width: 90%;
+    padding: .6rem 1rem ;
+    border-radius: 10px;
+    border-style: none;
+    color: #fff;
+    font-weight: 500;
+  }
+  .exports > button:hover{
+    background-color: #5228ff;
+  }
+  .exportar-card{
+    color: var(--color);
+    font-weight: 400;
+    font-size: 1.2rem;
+    width: 100%;
+    text-align: left;
+    padding-left: 10px;
+    padding-top: 5px;
+  }
+  .aclaracion{
+    text-align: center;
+    display: block;
+    font-size: .8rem;
+    color: var(--color);
+    margin: auto;
+    width: 80%;
+    opacity: .8;
+    font-weight: 200;
+  }
+.excel{
+    text-align: center;
+    display: block;
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+    color: green;
+    font-weight: 500;
+    font-style: oblique;
+}
+  
+
+/* Media query para resoluciones */
+@media (max-width: 850px) {
+    .container-grid {
+        grid-template-areas:
+        "menu derecha derecha"
+        "menu envios envios"
+        "menu mensajes mensajes";
+        grid-template-columns: minmax(130px, 230px) auto minmax(auto, 1fr);
+    }
+
+}
+
+@media (max-width: 760px) {
+    .container-grid {
+        grid-template-areas:
+            "menu derecha"
+            "menu envios"
+            "menu mensajes"
+            "menu datos";
+        ;
+        grid-template-columns: minmax(130px, 150px) 1fr;
+    }
+}
+
+
+

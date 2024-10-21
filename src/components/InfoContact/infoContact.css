@@ -1,0 +1,18 @@
+.info-container {
+  width: 90%;
+  height: 30px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  border-color: var(--color);
+  border-top: 1px solid;
+
+}
+
+.info-container a{
+  text-decoration: none;
+  color: var(--color);
+  background: var(--button-bg-color);
+}

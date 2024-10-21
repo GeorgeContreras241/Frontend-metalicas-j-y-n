@@ -1,0 +1,90 @@
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+.box {
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.box img {
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    height: auto;
+    transition: transform 0.5s;
+}
+
+.overlay {
+    height: 0;
+    width: 100%;
+    background: linear-gradient(transparent, #1c1c1c 90%);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+    transition: height 0.5s;
+    color: var(--color);
+}
+
+.overlay h3 {
+   color: var(--color);
+   text-align: left;
+   width: 100%;
+   border-radius: 10px;
+   margin-bottom: 15px;
+   padding: 0 10px;
+}
+.overlay span{
+    color: #f9f9f9ee;
+
+}
+.overlay p{
+    color: #f9f9f9ee;
+    margin-bottom: 20px;
+    padding: 0 10px;
+    font-style: italic;
+    line-height: 15px;
+}
+.overlay-button{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    gap: 40px;
+}
+.overlay-more{
+    background-color: #ff914785;
+    border-style: none;
+    border-radius: 15px;
+    padding: 10px;
+}
+.overlay-like{
+    background-color: rgba(0, 0, 255, 0.514);
+    border-style: none; 
+    border-radius: 15px;
+    padding: 10px;
+}
+.overlay-more:hover, .overlay-like:hover{
+    background-color: #cacaca33;
+}
+.boxLhover img {
+    transform: scale(1.2);
+}
+
+.box:hover .overlay {
+    height: 60%;
+}

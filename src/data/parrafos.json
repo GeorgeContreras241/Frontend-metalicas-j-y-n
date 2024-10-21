@@ -1,0 +1,39 @@
+[
+    {
+        "title": "Puertas y Ventanas Personalizadas",
+        "description": "Diseñamos y fabricamos puertas y ventanas únicas que se adaptan a tu estilo y necesidades. Ya sea que busques un diseño clásico, moderno o personalizado, estamos aquí para dar vida a tus ideas.",
+        "imgSrc": "https://img.freepik.com/foto-gratis/puerta-entrada-decorada-planta_23-2150562175.jpg?size=626&ext=jpg&ga=GA1.1.933601817.1717113600&semt=ais_user",
+        "imgAlt": "Puertas y Ventanas Personalizadas"
+    },
+    {
+        "title": "Estructuras Metálicas",
+        "description": "Creamos estructuras metálicas duraderas y funcionales para proyectos residenciales, comerciales e industriales. Desde pérgolas elegantes hasta escaleras robustas, nuestro equipo experto se encarga de cada detalle.",
+        "imgSrc": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_ckGOB6H1cSaHcmvBXByLTI9wr8l9_GXzuw&s",
+        "imgAlt": "Ornament"
+    },
+    {
+        "title": "Servicios de Soldadura",
+        "description": "Contamos con profesionales altamente calificados en soldadura que garantizan un trabajo preciso y resistente. Realizamos reparaciones, modificaciones y creaciones originales con la máxima atención a la calidad.",
+        "imgSrc": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSijgBUyX1nMqGKzZdP1ikiBaNXebTJxqsiMg&s",
+        "imgAlt": "Servicios de Soldadura"
+    },
+    {
+        "title": "Compromiso con la Calidad",
+        "description": "En Metalicas J y N, la calidad es nuestra prioridad. Utilizamos materiales de primera y técnicas de fabricación avanzadas para asegurar que cada proyecto cumpla con los más altos estándares de durabilidad y estética.",
+        "imgSrc": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRm_R5r5DQIEGT6LmJsKlP4Sj-xbaFtsCudrw&s",
+        "imgAlt": "Compromiso con la Calidad"
+    },
+    {
+        "title": "Experiencia y Profesionalismo",
+        "description": "Con años de experiencia en la industria, nuestro equipo está comprometido a superar tus expectativas. Cada proyecto es una oportunidad para demostrar nuestro arte y habilidad en el trabajo con metales.",
+        "imgSrc": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTq4s_bCPYVY-A2REQ8h6i1VYIzTs2c7p1yGA&s",
+        "imgAlt": "Experiencia y Profesionalismo"
+    },
+    {
+        "title": "Contacta con Nosotros",
+        "description": "Estamos emocionados de trabajar contigo en tu próximo proyecto de ornamentación en metal. Contáctanos para discutir tus ideas, recibir un presupuesto personalizado o programar una consulta. En Metalicas J y N, hacemos de tus sueños en metal una realidad.",
+        "imgSrc": "https://cdn-icons-png.flaticon.com/512/5741/5741178.png",
+        "imgAlt": "Contacta con Nosotros"
+    }
+    
+]

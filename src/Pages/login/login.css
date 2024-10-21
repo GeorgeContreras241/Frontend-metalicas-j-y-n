@@ -1,0 +1,10 @@
+.container-login {
+    width: 100%;
+    height: 100vh;
+}
+
+.class-exit {
+    margin-left:15px;
+    position: relative;
+    top: -7px;
+}
