@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import './Home.css'
 import { Parrafo } from '../../components/parrafo/Parrafo'
+import { Link } from 'react-router-dom'
 
 
 
@@ -19,8 +20,8 @@ export const Home = () => {
                                 Aquí encontrarás una amplia variedad de trabajos artísticos y de ornamentación de alta calidad.
                             </p>
                             <div className="hero-buttons">
-                                <a href="#" className="hero-button hero-button-primary">Galería de Trabajos</a>
-                                <a href="#" className="hero-button hero-button-secondary">Sobre Nosotros</a>
+                                <Link to="/galeria" className="hero-button hero-button-primary">Galería de Trabajos</Link>
+                                <Link to="/contactanos" className="hero-button hero-button-secondary">Sobre Nosotros</Link>
                             </div>
                         </div>
                     </div>

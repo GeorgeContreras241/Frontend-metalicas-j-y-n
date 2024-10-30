@@ -1,43 +1,65 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { LightMode } from '../LightMode'
 import { IoSearchOutline } from "react-icons/io5";
 import './Header.css'
 import { Link } from 'react-router-dom';
+import { Divider } from '@mui/material';
 
-export const Header = ({ text }) => {
+export const Header = () => {
+  const [open, setOpen] = useState(false)
+
+  const handleMenu = () => {
+    if (open == true) {
+      setOpen(false)
+    } else {
+      setOpen(true)
+    }
+  }
+
   return (
-    <header className='header-container'>
-      <nav className='header'>
-        <div className='header-one'>
-          <li><LightMode></LightMode></li>
-          <li>{text}</li>
+    <>
+      <header className='header-container'>
+        <div className='header__one'>
+          <LightMode ></LightMode>
         </div>
-        <div className='header-two'>
-          <li>
-            <Link to="/">
-              Inicio
-            </Link>
-          </li>
-          <li>
-            <Link to="/Galeria">
-              Galeria
-            </Link>
-          </li>
-          <li>
-            <Link to="/contactanos">
-              Servicios
-            </Link>
-          </li>
+        <nav className='header__two'>
+          <ul>
+            <li>
+              <Link to="/">
+                Inicio
+              </Link>
+            </li>
+            <li>
+              <Link to="/Galeria">
+                Galeria
+              </Link>
+            </li>
+            <li>
+              <Link to="/contactanos">
+                Servicios
+              </Link>
+            </li></ul>
+        </nav>
+        <div className='header__three'>
+          <Link to={"/rastreo"}>Seguir pedido</Link>
+          <Link to={"/login"}>Login</Link>
         </div>
-        <div className='header-three'>
-          <li><Link to={"/rastreo"}
-          ><button className='header-button'>Serguir Pedido</button>
-          </Link></li>
-          <li><Link to={"/login"}
-          ><button className='header-button'>Login</button>
-          </Link></li>
+        <div className='menu'>
+          <button className="nav__icon" onClick={handleMenu}>
+            <div className={`menu__toggle ${open ? "open" : ""}`}>
+              <i></i>
+            </div>
+          </button>
         </div>
-      </nav>
-    </header>
+      </header>
+      <ul className={`menu__res ${open ? "active" : ""}`}>
+        <div>
+          <li><Link to="/">Inicio</Link></li>
+          <li><Link to="/Galeria">Galeria</Link></li>
+          <li><Link to="/contactanos">Contactanos</Link></li>
+        </div>
+      </ul>
+    </>
+
   )
 }

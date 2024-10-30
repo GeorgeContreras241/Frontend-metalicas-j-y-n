@@ -43,6 +43,7 @@ body {
   text-rendering: var(--text-rendering);
   -webkit-font-smoothing: var(--webkit-font-smoothing);
   -moz-osx-font-smoothing: var(--moz-osx-font-smoothing);
+  
 }
 
 ::-webkit-scrollbar {
@@ -64,4 +65,12 @@ body {
 /* Estilo del agarre (pulgar) al pasar el ratón por encima */
 ::-webkit-scrollbar-thumb:hover {
   background-color: #5555558c; /* Color del agarre al pasar el ratón */
+}
+
+a{
+  text-decoration: none;
+  color: #fff;
+}
+li{
+  list-style: none;
 }

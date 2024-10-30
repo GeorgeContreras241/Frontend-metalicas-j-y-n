@@ -16,7 +16,7 @@ export const LightMode = () => {
       root.style.setProperty('--button-bg-color', '#333333')
       root.style.setProperty('--border-color', '#333333')
       root.style.setProperty('--targetas', '#292929')
-      
+
     } else {
       root.style.setProperty('--color', '#213547')
       root.style.setProperty('--background-color', '#ffffff')
@@ -28,11 +28,8 @@ export const LightMode = () => {
   }, [darkMode])
 
   return (
-    <div className='button-container'>
-      <button className="buttonMode" onClick={() => setDarkMode(!darkMode)}>
-        {darkMode ? <IoMdSunny fontSize={20} /> : <CiDark fontSize={20} className='icons'/>}
-      </button>
-    </div>
-
+    <button className="buttonMode" onClick={() => setDarkMode(!darkMode)}>
+      {darkMode ? <IoMdSunny className='icons' /> : <CiDark className='icons' />}
+    </button>
   )
 }

@@ -1,0 +1,53 @@
+/*Title y Botones*/
+.container__galery {
+    display: flex;
+    flex-flow: column nowrap;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.galery__title {
+    font-size: 2rem;
+    padding: 3rem;
+}
+
+.container__galery section {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10px;
+    flex-flow: row wrap;
+    margin-bottom: 1rem;
+}
+
+.container__galery section button {
+    padding: .7rem 1.5rem;
+    border: none;
+    background-color: var(--color);
+    color: var(--background-color);
+    border-radius: 0.375rem;
+    font-weight: 500;
+    transition: background-color 0.3s;
+}
+.container__galery section button:hover {
+    background-color: var(--border-color);
+    color: var(--color);
+  }
+
+/**/
+/*Contenador de imagenes*/
+.galery__img{
+    width: 80%;
+    display: flex;
+    gap: 10px;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+@media screen and (max-width: 1000px){
+    .galery__img{
+        width: 100%;
+    }
+}
+/**/

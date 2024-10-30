@@ -25,11 +25,11 @@
 }
 
 .container-one {
-  max-width: 600px;
+  max-width: 800px;
 }
 
 .container-one h4 {
-  margin-bottom: -20px;
+  font-size: 2rem;
 }
 
 .container-two {
@@ -47,6 +47,7 @@
   margin-left: 3rem;
   font-size: 1rem;
   color: var(--text-color-muted);
+  list-style: circle;
 }
 
 .container-one p {
@@ -63,10 +64,14 @@
   background-color: #70C056;
   border: none;
   border-radius: 20%;
+  transform: scale(1);
+  transition: transform .3s ease;
+  cursor: pointer;
 }
 
 .container-button-wp:hover {
-  background-color: #618d53;
+  background-color: #71c056e0;
+  transform: scale(1.1);
 }
 
 .container-wp {
